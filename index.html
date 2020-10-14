@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BALENCIAGA</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--    favicon-->
+    <link rel="shortcut icon" type="image/png" href="img/icon/favicon512.png">
+    <!--    viewport-->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <script src="js/jquery-3.5.1.js">
+    </script>
+    <script>
+        window.onload = function() {
+            document.cookie = "safeCookie1=foo; SameSite=Lax";
+            document.cookie = "safeCookie2=foo";
+            document.cookie = "crossCookie=bar; SameSite=None; Secure";
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <!--                    hamburger menu-->
+            <div class="mo_navi">
+                <label for="toggle_menu">
+                </label>
+                <input type="checkbox" id="toggle_menu">
+                <nav id="nav1">
+                    <ul>
+                        <li><a href="#">여성복</a></li>
+                        <li><a href="#">남성복</a></li>
+                        <li><a href="#">about page</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--            logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <div class="m_logo"><img src="img/logo/mlogo.png" alt="logo"></div>
+                    <div class="p_logo"><img src="img/logo/logo.png" alt="logo"></div>
+
+                </a>
+            </div>
+            <!--            2dimention-->
+            <nav id="nav2">
+                <ul>
+                    <li><a href="index.html">
+                            <div class="img big"><img src="img/1top/signin.png" alt="login"></div>
+                        </a></li>
+                    <li><a href="index.html">
+                            <div class="img big"><img src="img/1top/cart.png" alt="cart"></div>
+                        </a></li>
+                    <li><a href="index.html">
+                            <div class="img big"><img src="img/1top/heart.png" alt="like"></div>
+                        </a></li>
+                    <li><a href="index.html">
+                            <div class="img big"><img src="img/1top/less-zoom-sign.png" alt="search"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--        메인컨텐츠-->
+        <!--       section 으로 partion seperate 후 article로 내부 구문-->
+        <section class="main" id="bag_main">
+            <article class="visual" id="main_img1">
+                <div class="visual_inputimg" id="main_in-img1"></div>
+                <div class="over">
+                    <h1> 20th anniversary</h1>
+                </div>
+                <!--               메인이미지-->
+                <!--HOVER 겹침</div>-->
+            </article>
+            <article class="new">
+                <div class="new1" id="classic_bn">
+                    <div class="bn_txt">
+                        <h3><b>클래식 백 20주년</b></h3>
+                        <p>전세계인의 사랑을 받아온 클래식백이, <br>다시 새로운 모습으로 여러분 앞에 선보입니다.</p>
+                        <a href="index.html" class="btn"> &nbsp;-&gt; 더 알아보기 </a>
+                    </div>
+                    <div class="goods_img" id="bagbn"></div>
+                    <!--                    더 알아보기 버튼으로 아래 가방이 변화 1<->2-->
+                    <!--               필연적으로 가방과 지갑의 이미지를 합쳐야 합니다 top left / top right-->
+                </div>
+                <div class="new2">
+                    <div class="goods1">
+                        <div class="price" id="bag_p1">3,070,000￦</div>
+                        <div class="goods_img big" id="baggimg"></div>
+                        <a href="index.html" class="goods_name" id="baggtxt">Green</a>
+                    </div>
+                    <div class="goods1">
+                        <div class="price" id="bag_p2">3,070,000￦</div>
+                        <div class="goods_img big" id="bagyimg"></div>
+                        <a href="index.html" class="goods_name" id="bagytxt">Yellow</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!--        스니커즈-->
+        <section class="main" id="sneakers">
+            <article class="visual" id="main_img2">
+                <div class="visual_inputimg" id="main_in-img2"></div>
+                <div class="over">
+                    <h1>SPEED SneakerS</h1>
+                </div>
+            </article>
+            <article class="new">
+                <div class="new1" id="sneakers_bn">
+                    <div class="bn_txt">
+                        <h3><b>Sneakers selection</b></h3>
+                    </div>
+                    <div class="goods_img" id="sneackers_bn">
+                        <a href="index.html" class="btn" id="btn2"></a>
+                    </div>
+                    <!--                    더 알아보기 버튼으로 아래 가방이 변화 1<->2-->
+                    <!--               필연적으로 가방과 지갑의 이미지를 합쳐야 합니다 top left / top right-->
+                </div>
+                <div class="new2">
+                    <div class="goods1">
+                        <div class="price">950,000￦</div>
+                        <div class="goods_img  big" id="sneak1img"></div>
+                        <a href="index.html" class="goods_name" id="sneak1txt">Speed sneakers</a>
+                    </div>
+                    <div class="goods1">
+                        <div class="price">1,020,000￦</div>
+                        <div class="goods_img big" id="sneak2img"></div>
+                        <a href="index.html" class="goods_name" id="sneak2txt">2.0 sneaksers</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!--        샌들-->
+        <section class="main" id="sandles">
+            <article class="visual" id="main_img3">
+                <div class="visual_inputimg" id="main_in-img3"></div>
+                <div class="over">
+                    <h1><small>We are entirely free <br> to live differently</small> <br><br>
+                        <b>Track SandleS</b>
+                    </h1>
+                </div>
+            </article>
+            <article class="new">
+                <div class="new1">
+                    <div class="goods1">
+                        <div class="price">800,000￦</div>
+                        <div class="goods_img sandals big" id="san_black_img"></div>
+                        <a href="index.html" class="goods_name" id="san_black_txt">Black</a>
+                    </div>
+                    <div class="goods1">
+                        <div class="price">800,000￦</div>
+                        <div class="goods_img big" id="san_white_img"></div>
+                        <a href="index.html" class="goods_name" id="san_white_txt">White</a>
+                    </div>
+                </div>
+                <div class="new2">
+                    <div class="goods1">
+                        <div class="price">800,000￦</div>
+                        <div class="goods_img big" id="san_blue_img"></div>
+                        <a href="index.html" class="goods_name" id="san_blue_txt">Blue</a>
+                    </div>
+                    <div class="goods1">
+                        <div class="price">800,000￦</div>
+                        <div class="goods_img big" id="san_pink_img"></div>
+                        <a href="index.html" class="goods_name" id="san_pink_txt">Pink</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--        토트백-->
+        <section class="main" id="tote_bag">
+            <article class="visual" id="main_img4">
+                <div class="visual_inputimg" id="main_in-img4"></div>
+                <div class="over">
+                    <strong>
+                        <h1>Daily tote bag</h1>
+                    </strong>
+                </div>
+            </article>
+            <article class="new">
+                <div class="new1">
+                    <div class="goods1">
+                        <div class="price">1,668,130￦</div>
+                        <div class="goods_img big" id="everyday_img"></div>
+                        <a href="index.html" class="goods_name" id="everyday_txt">에브리데이 토트백</a>
+                    </div>
+                    <div class="goods1">
+                        <div class="price">1,320,000￦</div>
+                        <div class="goods_img big" id="backtote_img"></div>
+                        <a href="index.html" class="goods_name" id="backtote_txt">백 토트백</a>
+                    </div>
+                </div>
+                <div class="new2">
+                    <div class="goods1">
+                        <div class="price">650,000￦</div>
+                        <div class="goods_img big" id="explorer_img"></div>
+                        <a href="index.html" class="goods_name" id="explorer_txt">익스플로러 크로스바디</a>
+                    </div>
+                    <div class="goods1">
+                        <div class="price">920,000￦</div>
+                        <div class="goods_img big" id="explorertote_img"></div>
+                        <a href="index.html" class="goods_name" id="explorertote_txt">익스플로러 토트백</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--유튜브-->
+        <section class="main" id="collection">
+            <article class="visual" id="main_img5">
+                <div class="visual_inputimg" id="main_in-img5">
+                    <div>
+                        <p>컬렉션</p>
+                    </div>
+                    <div class="mob_mov">
+                        <iframe width="360" height="240" src="https://www.youtube.com/embed/9QMugKSXFWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="pc_mov">
+                        <iframe width="480" height="320" src="https://www.youtube.com/embed/9QMugKSXFWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <h2>2020 WINTER</h2>
+                    </div>
+                </div>
+            </article>
+            <article class="new coll_bg">
+                <div class="new1">
+                    <div class="goods1">
+                        <div class="goods_img">
+                            <div class="goods_inputimg" id="model1_img"></div>
+                        </div>
+                    </div>
+                    <div class="goods1">
+                        <div class="goods_img">
+                            <div class="goods_inputimg" id="model2_img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new2">
+                    <div class="goods1">
+                        <div class="goods_img">
+                            <div class="goods_inputimg" id="model3_img"></div>
+                        </div>
+                    </div>
+                    <div class="goods1">
+                        <div class="goods_img">
+                            <div class="goods_inputimg" id="model4_img"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!--        아티클-->
+        <section class="main" id="article">
+            <article class="visual" id="main_img6">
+                <p>Article View</p>
+                <div class="over">
+                    <h1>Fall '20 campaign</h1>
+                </div>
+
+            </article>
+            <article class="new" id="article_or1">
+                <div class="new1">
+                    <div class="goods1">
+                        <div class="price" id="article_txt1">BALENCIAGA <br>Returns to the<br>Haute couture<br>eek schedule</div>
+                        <div class="goods_img" id="article1_img">
+                            <div class="visual2">
+                                <a href="index.html" class="over">
+                                    <h1>view</h1>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="new2">
+                    <div class="goods1">
+                        <div class="price" id="article_txt2">발렌시아가가<br> 52년 만에<br> 오뜨 꾸띄르<br> 컬렉션을 <br>다시 전개한다</div>
+                        <div class="goods_img" id="article2_img">
+                            <div class="visual2">
+                                <a href="index.html" class="over">
+                                    <h1>view</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="sns">
+            <h1>SNS</h1>
+            <div class="main">
+                <!--               아티클 값 이미지 사이즈에 맞춰서 360360/720720으로 수정할것.-->
+                <article class="new3">
+                    <div class="new1">
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img1">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="big">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img2">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="big">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new2">
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img3">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="big">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img4">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="big">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="new3">
+                    <div class="new1">
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img5">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="big">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img6">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="big">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new2">
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img7">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="big">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods2">
+                            <div class="goods_img" id="sns_img8">
+                                <div class="visual3">
+                                    <a href="index.html" class="over">
+                                        <h1 class="drop">♡</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="main" id="icon">
+            <ul class="wrapqa">
+                <li>
+                    <div class="img qa"><img src="img/icon/1.png" alt="Shipping">
+                        <p>50만원 이상 구매시 <br> <b>무료배송</b></p>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="img qa"><img src="img/icon/2.png" alt="Refund">
+                        <p>반품 걱정하지 마세요.<br>구매 후, <b>7일 이내</b> 반품이 가능합니다</p>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="img qa"><img src="img/icon/3.png" alt="Exchange">
+                        <p><b>단순 변심, 상품에 문제 발견시</b> <br>교환이 가능하도록 준비중 입니다.</p>
+                    </div>
+
+                </li>
+                <li>
+                    <!--                   -->
+                    <div class="img qa"><img src="img/icon/face-side.png" alt="sns">
+                        <p>발렌시아가의 sns 채널을 구독해서 <br> <b>새로운 소식</b>을 확인하세요.</p>
+                    </div>
+
+                </li>
+            </ul>
+
+        </section>
+        <section class="main" id="dmt_two">
+            <div class="wrapqa dmt_wrap">
+                <ul>
+                    <li class="dmt_head"><a href="#">SUPPORT
+                            <ul>
+                                <li class="dmt_child"><a href="#">고객지원센터</a></li>
+                                <li class="dmt_child"><a href="#">1:1 문의</a></li>
+                                <li class="dmt_child"><a href="#">주문/배송 조회</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="dmt_head"><a href="#">INFORMATION
+                            <ul>
+                                <li class="dmt_child"><a href="#">발렌시아가에 대하여</a></li>
+                                <li class="dmt_child"><a href="#">회원가입</a></li>
+                                <li class="dmt_child"><a href="#">매장안내</a></li>
+                                <li class="dmt_child"><a href="#">공지사항</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="dmt_head"><a href="#">POLICY
+                            <ul>
+                                <li class="dmt_child"><a href="#">이용약관</a></li>
+                                <li class="dmt_child"><a href="#">개인정보처리방침</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="dmt_head"><a href="#">FAMILY SITES
+                            <ul>
+                                <li class="dmt_child"><a href="#">YSL</a></li>
+                                <li class="dmt_child"><a href="#">BOUCHERON</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <ul class="wrap_footer">
+                <li>
+                    <p>(주)발렌시아가코리아 |Kering Holland N.V. <br>
+                        주소:서울 강남구 도산대로 439 <br>
+                        전화 +82 261052188 월요일~토요일, 오전 9:30시~오후 9시 (싱가포르 시각) <br>
+                        라이브 채팅: 월요일~토요일, 오전 9:30시~오후 9시 (싱가포르 시각) <br>
+                        이메일 연락: 24시간 이내에 답변해 드립니다
+                    </p>
+                    <a href="#">2020 Balenciaga </a>
+                </li>
+                <li>
+                    <p>소비자피해 보증보험 <br>
+                        고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 구매 <br>
+                        안전서비스 소비자피해 보증보험 서비스를 이용 하실수 있습니다. <br>
+                        보증대상:미배송,반품/환불거부,쇼핑몰 부도
+
+                    </p>
+                    <a href="#">보증보험 가입사실 확인하기</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body></html>
